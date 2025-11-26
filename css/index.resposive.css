@@ -1,0 +1,175 @@
+@media (max-width: 1300px) {
+  nav .continer {
+    position: relative;
+  }
+
+  nav .continer .logo {
+    width: 15px;
+  }
+
+  nav .continer .burger {
+    display: flex;
+  }
+
+  nav .continer .burger:focus + .links {
+    padding: 20px;
+    height: 254px;
+  }
+
+  nav .continer .links {
+    display: block;
+    position: absolute;
+    top: 125%;
+    background-color: #333;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0px;
+    overflow: hidden;
+    transition-duration: 1s;
+  }
+
+  nav .continer .links ul {
+    flex-direction: column;
+  }
+
+  nav .continer .links ul li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  #About .continer {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  #About .continer {
+    flex-wrap: wrap;
+  }
+
+  #About .continer > div[class^="part_"] {
+    width: 100%;
+  }
+
+  #About .continer .part_1 .frame {
+    width: 250px;
+    margin-bottom: 60px;
+  }
+
+  #About .continer .part_1 .frame .img .layout ul li {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  #About .continer .part_2 .row .col {
+    width: 100%;
+    display: flex;
+  }
+
+  #About .continer .part_2 .row .col {
+    margin-bottom: 20px;
+  }
+
+  #Services .content .box {
+    width: 100%;
+  }
+
+  #Services .content .box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  #Services .content .box .item {
+    width: 280px;
+    margin: auto;
+  }
+
+  #Portfolio .content .box {
+    width: 100%;
+  }
+
+  #Portfolio .content .box .item {
+    width: 280px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+  #About .continer .part_1 .frame {
+    width: 350px;
+  }
+
+  #About .continer .part_1 .frame .img:hover .layout ul li {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #Services .content .box {
+    width: 50%;
+  }
+
+  #Services .content .box .item {
+    width: initial;
+    margin: 0px 10px;
+    padding: 15px 10px;
+  }
+
+  #Services .content .box {
+    width: 50%;
+  }
+
+  #Services .content .box .item {
+    width: initial;
+    margin-inline: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  nav .continer .logo {
+    width: 10%;
+  }
+
+  #About .continer > div[class^="part_"] {
+    width: 50%;
+  }
+
+  #About .continer .part_1 .frame {
+    width: 75%;
+  }
+
+  #About .continer .part_2 .row .col {
+    width: 50%;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav .continer .logo {
+    width: 8%;
+  }
+
+  #About .continer .part_2 .row .col {
+    width: 50%;
+    font-size: 15px;
+  }
+
+  #Services .content .box .item {
+    width: 25%;
+  }
+
+  #Services .content .box .item p {
+    font-size: 14px;
+  }
+
+  #Services .content .box {
+    width: calc(100% / 3);
+  }
+}
